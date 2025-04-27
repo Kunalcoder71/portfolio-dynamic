@@ -9,7 +9,7 @@ const person = {
   role: "Web Developer",
   avatar: "/images/gallery/123.jpg",
   email: "kunalrajak979@gmail.com",
-  location: "Asia/Kolkata", // Correct IANA time zone for Kolkata
+  location: "Asia/Kolkata", // Correct IANA time zone
   languages: ["English", "Hindi", "Bengali"],
 };
 
@@ -32,7 +32,7 @@ const social = [
   {
     name: "X",
     icon: "x",
-    link: "", // You can add your Twitter/X link here if you have one
+    link: "", // Add your Twitter/X profile if available
   },
   {
     name: "Email",
@@ -74,14 +74,15 @@ const about = {
     display: true,
   },
   calendar: {
-    display: false, // Hide calendar unless you want to add a real booking link
+    display: true,
+    link: "https://cal.com",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Hello! I'm {person.name}, a Kolkata-based Web Developer passionate about creating clean, responsive, and impactful web applications. 
+        Hello! I'm {person.name}, a Kolkata-based Web Developer passionate about creating clean, responsive, and impactful web applications.
         I love working at the intersection of technology and creativity.
       </>
     ),
@@ -98,7 +99,14 @@ const about = {
           <>Developed responsive websites using modern web technologies like React.js, Node.js, and Tailwind CSS.</>,
           <>Collaborated with clients to transform ideas into reality and improve their online presence.</>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/project-01/cover-01.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
         company: "Self Projects",
@@ -174,7 +182,6 @@ const gallery = {
       alt: "image",
       orientation: "vertical",
     },
-    
   ],
 };
 
